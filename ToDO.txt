@@ -1,0 +1,32 @@
+Vor dem Live schalten muss noch passieren:
+
+Allgemein:
+    1. Name festlegen!
+    2. Zum Schluss: Rechtschreibprüfung!
+
+Home:
+    1. Keywords anpassen
+    2. Button mit Funktion versehen
+
+Team:
+    1. Beschreibung von (Mischa, Pascal)
+    2. Je 1 Bild p.P. zur Vorstellung
+
+Strecken:
+    Pitbike:
+    - Rheine ergänzen
+
+    Rennstrecke:
+    - Meppen ergänzen
+    - Oschersleben ergänzen
+
+Galerie:
+    1. Pictrs kennenlernen
+    2. Galerie verknüpfen
+
+Kontakt:
+    1. Mail Adresse einrichten (WENN NAME STEHT)
+    2. Kontaktformular einrichten
+
+
+
