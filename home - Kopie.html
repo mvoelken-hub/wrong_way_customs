@@ -8,18 +8,12 @@
 </head>
 <body class="bg-slate-950 text-slate-100">
 
-    <!-- Header -->
+    <!-- Header bg-black/60 backdrop-blur sticky top-0 z-50-->
     <header class="bg-black/60 backdrop-blur sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-        <a href="home.html" class="flex items-center gap-3">
-          <img
-            src="pictures/logo_schwarz_2.jpeg"
-            alt="Wrong Way Customs Logo"
-            class="h-8 w-auto"
-          />
-          <h1 class="text-xl font-semibold tracking-wide">
-            Wrong Way Customs
-          </h1>
+        <!--h1 class="text-xl font-semibold tracking-wide">Wrong Way Customs</h1-->
+        <a href="home.html" class="flex items-center gap-2 text-xl font-semibold tracking-wide">
+        <span>Wrong Way Customs</span>
         </a>
         <nav class="space-x-6 text-sm uppercase">
         <a href=home.html class="hover:text-red-500">Home</a>
@@ -31,26 +25,36 @@
     </div>
     </header>
 
-  <!-- Home -->
+  <!-- Hero relative h-[70vh] flex items-center justify-center text-center-->
   <section class="relative h-[70vh] flex items-center justify-center text-center">
     <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black"></div>
     <div class="relative max-w-3xl px-6">
-      <img
-      src=pictures/logo_schwarz_1.jpeg
-      alt="Team_Mischa"
-      class="w-full h-128 object-contain rounded-xl mb-12"
-      />
+      <div class="relative flex justify-center mb-6">
+        <!-- Hintergrund -->
+        <div class="absolute inset-0 flex justify-center items-center">
+          <div class="bg-slate-900 w-[1240px] h-[360px] rounded-full"></div>
+        </div>
+
+        <!-- Logo -->
+        <img
+          src=pictures/logo_3.png
+          alt="logo"
+          class="relative h-56 md:h-64 w-auto object-contain"
+        />
+        </div>
       <!--h2 class="text-4xl md:text-5xl font-bold mb-6">KEYWORD. KEYWORD. KEYWORD.</h2-->
-      <!--p class="text-lg text-slate-300 mb-8">
+      <div class="flex justify-center mb-8">
+      </div>
+      <p class="text-lg text-slate-300 mb-8">
         ***Irgendein Einzeiler zum catchen.***
-      </p-->
-      <a href=team.html class="inline-block bg-lime-500 hover:bg-lime-600 px-8 py-3 rounded-xl font-semibold">
-        Lerne uns kennen
+      </p>
+      <a href="#training" class="inline-block bg-red-600 hover:bg-red-700 px-8 py-3 rounded-xl font-semibold">
+        BUTTON MIT IRGENDWAS VERKNÜPFEN ODER WIEDER ENTFERNEN
       </a>
     </div>
   </section>
 
-  <!-- About us -->
+  <!-- Training Section bg-slate-900 py-20 px-6-->
   <section id="about_us" class="bg-slate-900 py-20 px-6">
     <div class="max-w-7xl mx-auto">
       <h3 class="text-3xl font-semibold mb-8">Über uns</h3>
