@@ -1,0 +1,14 @@
+[
+  {
+    "src": "images/platzhalter_1.jpeg",
+    "alt": "Projekt Beispiel 1",
+    "title": "Projekt 1",
+    "category": "Referenzen"
+  },
+  {
+    "src": "images/platzhalter_2.jpeg",
+    "alt": "Projekt Beispiel 2",
+    "title": "Projekt 2",
+    "category": "Referenzen"
+  }
+]
