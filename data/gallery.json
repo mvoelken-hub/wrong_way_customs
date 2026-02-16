@@ -1,14 +1,32 @@
 [
   {
-    "src": "images/platzhalter_1.jpeg",
-    "alt": "Projekt Beispiel 1",
-    "title": "Projekt 1",
-    "category": "Referenzen"
+    "src": "images/gallery/img_001.jpg",
+    "alt": "Team_001",
+    "title": "Team_001",
+    "category": "Pitbike"
   },
   {
-    "src": "images/platzhalter_2.jpeg",
-    "alt": "Projekt Beispiel 2",
-    "title": "Projekt 2",
-    "category": "Referenzen"
+    "src": "images/gallery/img_002.jpg",
+    "alt": "Vivi_001",
+    "title": "Vivi_001",
+    "category": "Vivi"
+  },
+  {
+    "src": "images/gallery/img_003.jpg",
+    "alt": "Team_002",
+    "title": "Team_002",
+    "category": "Pitbike"
+  },
+  {
+    "src": "images/gallery/img_004.jpg",
+    "alt": "Bikes_001",
+    "title": "Bikes_001",
+    "category": "Bikes"
+  },
+  {
+    "src": "images/gallery/img_005.jpg",
+    "alt": "Team_003",
+    "title": "Team_003",
+    "category": "Team"
   }
 ]
