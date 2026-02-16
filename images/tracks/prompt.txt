@@ -1,9 +1,0 @@
-Nimm das angehängte Bild als Vorlage um ein neues zu generieren.
-
-Tue dazu folgende Dinge:
-
-- Wandle das Bild in einen Comic-Style um
-
-- Ersetze die Karts vollständig durch 4 Motorräder im Supermoto/Pitbike stil
-
-- Das erzeugte Bild muss ein Format von 21:9 haben 
