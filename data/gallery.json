@@ -28,5 +28,23 @@
     "alt": "Team_003",
     "title": "Team_003",
     "category": "Team"
+  },
+    {
+    "src": "images/gallery/img_006.jpg",
+    "alt": "Mischa_001",
+    "title": "Mischa_001",
+    "category": "Mischa"
+  },
+    {
+    "src": "images/gallery/img_007.jpg",
+    "alt": "Mischa_002",
+    "title": "Mischa_002",
+    "category": "Mischa"
+  },
+    {
+    "src": "images/gallery/img_008.jpg",
+    "alt": "Mischa_003",
+    "title": "Mischa_003",
+    "category": "Mischa"
   }
 ]
