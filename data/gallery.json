@@ -46,5 +46,17 @@
     "alt": "Mischa_003",
     "title": "Mischa_003",
     "category": "Mischa"
+  },
+    {
+    "src": "images/gallery/img_009.jpg",
+    "alt": "Vivi_002",
+    "title": "Vivi_002",
+    "category": "Vivi"
+  },
+    {
+    "src": "images/gallery/img_010.jpg",
+    "alt": "Marc_001",
+    "title": "Marc_001",
+    "category": "Marc"
   }
 ]
