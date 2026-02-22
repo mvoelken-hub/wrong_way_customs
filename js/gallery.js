@@ -1,29 +1,8 @@
-fetch("data/gallery.json")
-  .then(response => response.json())
-  .then(images => {
-    const grid = document.getElementById("galleryGrid");
-
-    images.forEach(img => {
-      const item = document.createElement("div");
-      item.className = "gallery-item";
-
-      item.innerHTML = `
-        <img src="${img.src}"
-             alt="${img.alt}"
-             loading="lazy">
-      `;
-
-      grid.appendChild(item);
-    });
-  })
-  .catch(error => console.error("Galerie konnte nicht geladen werden:", error));
-
-
-// Lightbox-Funktionalität
+// 1. Variablen initialisieren
 let galleryData = [];
 let currentIndex = 0;
 
-// DOM Elemente
+// 2. DOM Elemente referenzieren
 const grid = document.getElementById("galleryGrid");
 const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightboxImage");
@@ -32,16 +11,21 @@ const closeBtn = document.getElementById("closeLightbox");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-// JSON laden
+// 3. Nur EINMAL die Daten laden
 fetch("data/gallery.json")
-    .then(res => res.json())
+    .then(res => {
+        if (!res.ok) throw new Error("Fehler beim Laden der JSON");
+        return res.json();
+    })
     .then(data => {
         galleryData = data;
-        renderGallery();
-    });
+        renderGallery(); // Bilder anzeigen
+    })
+    .catch(error => console.error("Galerie konnte nicht geladen werden:", error));
 
+// 4. Funktion zum Rendern (saubere Trennung)
 function renderGallery() {
-    grid.innerHTML = "";
+    grid.innerHTML = ""; // Sicherstellen, dass das Grid leer ist
 
     galleryData.forEach((item, index) => {
         const div = document.createElement("div");
@@ -49,20 +33,21 @@ function renderGallery() {
 
         div.innerHTML = `
             <img src="${item.src}" alt="${item.alt}" 
-                 class="w-full rounded-xl shadow-lg" />
+                 class="w-full rounded-xl shadow-lg" 
+                 loading="lazy" />
         `;
 
         // Klick öffnet Lightbox
         div.addEventListener("click", () => openLightbox(index));
-
         grid.appendChild(div);
     });
 }
 
+// --- Lightbox Logik (unverändert, aber sauberer strukturiert) ---
+
 function openLightbox(index) {
     currentIndex = index;
     updateLightboxImage();
-
     lightbox.classList.remove("hidden");
     lightbox.classList.add("flex");
 }
@@ -76,15 +61,13 @@ function updateLightboxImage() {
     lightboxImage.src = galleryData[currentIndex].src;
 }
 
-// Navigation
 function nextImage() {
     currentIndex = (currentIndex + 1) % galleryData.length;
     updateLightboxImage();
 }
 
 function prevImage() {
-    currentIndex =
-        (currentIndex - 1 + galleryData.length) % galleryData.length;
+    currentIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
     updateLightboxImage();
 }
 
@@ -93,14 +76,12 @@ closeBtn.addEventListener("click", closeLightboxFn);
 nextBtn.addEventListener("click", nextImage);
 prevBtn.addEventListener("click", prevImage);
 
-// Overlay klicken schließt Lightbox
 lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) closeLightboxFn();
 });
 
 document.addEventListener("keydown", e => {
     if (lightbox.classList.contains("hidden")) return;
-
     if (e.key === "ArrowRight") nextImage();
     if (e.key === "ArrowLeft") prevImage();
     if (e.key === "Escape") closeLightboxFn();
