@@ -58,5 +58,35 @@
     "alt": "Marc_001",
     "title": "Marc_001",
     "category": "Marc"
+  },
+      {
+    "src": "images/gallery/img_011.jpg",
+    "alt": "Assen_001",
+    "title": "Assen_001",
+    "category": "Assen"
+  },
+    {
+    "src": "images/gallery/img_012.jpg",
+    "alt": "Assen_002",
+    "title": "Assen_002",
+    "category": "Assen"
+  },
+    {
+    "src": "images/gallery/img_013.jpg",
+    "alt": "Vivi_003",
+    "title": "Vivi_003",
+    "category": "Vivi"
+  },
+    {
+    "src": "images/gallery/img_014.jpg",
+    "alt": "Vivi_004",
+    "title": "Vivi_004",
+    "category": "Vivi"
+  },
+    {
+    "src": "images/gallery/img_015.jpg",
+    "alt": "Mischa_004",
+    "title": "Mischa_004",
+    "category": "Mischa"
   }
 ]
